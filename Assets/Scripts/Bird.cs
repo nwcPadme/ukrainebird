@@ -8,6 +8,7 @@ public class Bird : MonoBehaviour
     public float force;
     private Rigidbody2D _bird;
     public GameObject restartButton;
+    public GameObject helpButtom;
     public AudioSource music;
 
 
@@ -35,6 +36,7 @@ public class Bird : MonoBehaviour
             Destroy(gameObject);
             Time.timeScale = 0;
             restartButton.SetActive(true);
+            helpButtom.SetActive(true);
             music.Stop();
         }
     }

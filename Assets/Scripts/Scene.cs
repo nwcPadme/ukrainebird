@@ -9,4 +9,16 @@ public class Scene : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("main");
+    }
+
+
+    public void Help()
+    {
+        SceneManager.LoadScene("help");
+    }
 }

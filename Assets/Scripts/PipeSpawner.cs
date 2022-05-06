@@ -19,7 +19,7 @@ public class PipeSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(2);
-            float rand = Random.Range(-1f, 4f);
+            float rand = Random.Range(-4f, 1f);
             GameObject newPipes = Instantiate(Pipes, new Vector3(2, rand, 0), Quaternion.identity);
             Destroy(newPipes, 5);
         }
